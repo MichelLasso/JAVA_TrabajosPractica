@@ -4,15 +4,13 @@
  */
 package ejerciciosjava;
 
-// 24
-public class NumeroFuerte {
+// 26
+public class HexadecimalBinario {
     public static void main(String[] args) {
-        String num= "A2C";
-        double suma= 0;
-        for (int i = 0; i < num.length(); i++) {
-            double a= Math.pow(16, i);
-            suma=suma+a;
-        }
-        System.out.println(suma);
+        String h= "A2C";
+        String b= Integer.toBinaryString(Integer.parseInt(h,16));
+        System.out.println("Hexadecimal: "+h);
+        System.out.println( "Binario: "+b);
     }
+    
 }

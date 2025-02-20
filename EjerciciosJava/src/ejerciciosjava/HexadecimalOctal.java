@@ -4,15 +4,12 @@
  */
 package ejerciciosjava;
 
-// 24
-public class NumeroFuerte {
+//  25
+public class HexadecimalOctal {
     public static void main(String[] args) {
-        String num= "A2C";
-        double suma= 0;
-        for (int i = 0; i < num.length(); i++) {
-            double a= Math.pow(16, i);
-            suma=suma+a;
-        }
-        System.out.println(suma);
+        String h="A2C";
+        int d= Integer.parseInt(h, 16);
+        String o= Integer.toOctalString(d);
+        System.out.println(o);
     }
 }

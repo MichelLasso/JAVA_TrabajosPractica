@@ -4,15 +4,11 @@
  */
 package ejerciciosjava;
 
-// 24
-public class NumeroFuerte {
+//27
+public class DecimalHexadecimal {
     public static void main(String[] args) {
-        String num= "A2C";
-        double suma= 0;
-        for (int i = 0; i < num.length(); i++) {
-            double a= Math.pow(16, i);
-            suma=suma+a;
-        }
-        System.out.println(suma);
+        int d=255;
+        String h= Integer.toHexString(d);
+        System.out.println("Decimal: " + d + " Hexadecimal: " + h);
     }
 }
