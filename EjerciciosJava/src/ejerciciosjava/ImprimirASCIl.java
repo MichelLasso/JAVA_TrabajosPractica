@@ -3,11 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ejerciciosjava;
-
-/**
- *
- * @author HP
- */
+//12
 public class ImprimirASCIl {
     public static void main(String[] args) {
         System.out.println("ASCII");
