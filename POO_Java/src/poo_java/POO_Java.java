@@ -9,10 +9,6 @@ public class POO_Java {
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
-        
-        
-        
-       // listDepartamento.add(1,"Rosa", "Edificio 3-4");
         //crear
         //eliminar
         //editar
@@ -39,6 +35,7 @@ public class POO_Java {
             
             // agregar datos
             listDepartamento.add(departamento1);
+            System.out.println("CRUD");
             System.out.println("-----");
             System.out.println("Leer ->Departamentos");
             System.out.println("-----");
@@ -63,17 +60,31 @@ public class POO_Java {
             System.out.println("-----");
             System.out.println("Lista de departamentos----");
             System.out.println("-----");
+            
             for (int i = 0; i < listDepartamento.size(); i++) {
                 System.out.println("->" + listDepartamento);
             }
             
             System.out.println("-----");
-            System.out.println("Eliminar departamento");
+            System.out.println("Eliminar departamento con id 0");
             System.out.println("-----");
+            //se elmina el departamento con el id 0
             listDepartamento.remove(0);
-            
+            System.out.println("Departamento eliminado con éxito :)");
+            System.out.println("---");
             for (int i = 0; i < listDepartamento.size(); i++) {
                 System.out.println("->" + listDepartamento);
+            }
+            System.out.println("---");
+            
+            System.out.println("----");
+            System.out.println("Actualizar Departamento");
+            System.out.println("----");
+            // se actualiza el nombre del departamento antes ingresado
+            departamentoE.nombre="Camilt";
+            
+            for (int i = 0; i < listDepartamento.size(); i++) {
+                System.out.println(listDepartamento);
             }
         } finally{
             
