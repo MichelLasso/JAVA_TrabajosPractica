@@ -20,6 +20,9 @@ public class ImplementacionClaseEmpleado_Ejercicio1 {
                 System.out.println("----");
                 System.out.println("Datos del empleado ->");
                 System.out.println("----");
+                System.out.println(empleado1.getNombre());
+                System.out.println(empleado1.getSalario());
+                        
             } else if(opcion==2){
                 System.out.println("----");
                 System.out.println("Actalizar salario");

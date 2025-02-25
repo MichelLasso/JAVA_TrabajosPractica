@@ -39,8 +39,18 @@ public class Producto {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    // Cantidad no puede ser negativa
+    
+    // Ver productos
+    public void mostrarProductos(Producto [] productos){
+        for (int i = 0; i< productos.length; i++) {
+            System.out.println("--CODIGO--> "+ productos[i].getCodigo());
+            System.out.println("Nombre-> " + productos[i].getNombre());
+            System.out.println("Precio ->" + productos[i].getPrecio());
+            System.out.println("Cantidad ->" + productos[i].getCantidad());
+            System.out.println("-------");
+        }
+    }
+    // precio no puede ser negativa
     public void verificarPrecio(double precio){
         if (precio>0) {
             this.precio= precio;
@@ -50,7 +60,21 @@ public class Producto {
         }
     }
 
-    
-    
+    //acctualizar stock y verificar que cantidad no quede en negativo
+    public void actualizarStock(int cantidadE){
+        if (cantidadE>0) {
+            cantidad= cantidad + cantidadE;
+            System.out.println("Se actualizó el stock con éxito");
+        } else if(cantidadE<0){
+            int resta = cantidad + cantidadE;
+                if (resta<0) {
+                    System.out.println("La cantidad ingresada suepera al numero actual en el Stock");
+                } else if(resta ==0 || resta>0){
+                    cantidad= cantidad - cantidadE;
+                    System.out.println("La cantidad fue actualizada con éxito");
+                }
+        }
+        
+    }
     
 }
