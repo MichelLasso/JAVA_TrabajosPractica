@@ -11,8 +11,8 @@ public class Liga_Baloncesto {
         Partidos [] partidos = new Partidos[3];
         
         // agregar 2 datos de diferentes objetos al mismo arreglo de partidos
-        partidos[0] = new Partidos_Liga("Liga", "1", "2", 1, 3, "juguando", "2024", 3 , "2");
-        partidos[1] = new Partidos_PlayOffs("Octavos", "1", "2", 0, 1, "proceso", "2025", 1, "2");
+        partidos[0] = new Partidos_Liga("Regular", "Lobos", "Tigres", 85, 78, "Finalizado", "2025-02-25", 85 , "Lobos");
+        partidos[1] = new Partidos_PlayOffs("Octavos", "Toros", "Panteras", 102, 98, "Finalizado", "2025-03-01", 102, "Toros");
         
         try {
             System.out.println("--------");
@@ -141,13 +141,8 @@ public class Liga_Baloncesto {
                 System.out.println("--------");
                 System.out.println("| Ver el ganadores |");
                 System.out.println("--------");
-                // recorrer los datos
-                for (int i = 0; i < 2; i++) {
-                    System.out.println("ID -> "+ i);
-                    partidos[i].mostrarDatos();
-                }
                 
-                System.out.println("Ingrese el id del partido ->");
+                System.out.println("Ingrese el id del partido (0/1)->");
                 int idE= scan.nextInt();
                 
                 for (int i = 0; i < partidos.length; i++) {
